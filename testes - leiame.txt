@@ -1,0 +1,71 @@
+####NOTAÇÕES####
+
+Como um grafo é representado: (Aresta vertice1 vertice 2)
+como um PDL é representado: 
+
+-Programa: Qualquer letra
+-Formula: Qualquer letra obrigatoriamente seguido de ?
+- * iteração
+- U união
+
+
+resultado esperado de para cada entrada:
+
+
+ grafo vazio:       ( ( )))
+
+Não aceita nada
+
+
+- grafo sem arestas: ( (      a)))  
+
+f?     - é aceita
+
+programa* - é aceita 
+
+
+
+programa - é rejeitada
+
+programa;f? - é rejeitada
+
+programa;programa -é rejeitada
+
+
+-grafo (A a b) (B b c)
+
+
+A;B - é aceita
+B;A - é rejeitada
+f?A;B - é aceita
+A;f?;B - é aceita
+A;B;f? - é aceita
+A;Bf? - é rejeitada por erro de sintaxe
+A;B;C - é rejeitada
+A*;B - é aceito
+
+
+- grafo (A a b) (B b c) (C a d) (D d e) (E a s)
+
+A;B U C;D U E é aceito
+
+f?A;B U f?C;D U E* - é aceito
+
+
+
+
+- grafo (A a b) (B b c) (C c d) (D c e) 
+
+A;B;((f?;C) U (f?;D)) - é aceito
+A;B((E?;c) U(F?;D)) - é rejeitada por erro de sintaxe
+A;S;((f?;C) U (f?;D)) - é rejeitado
+A;B;((f?;S) U (f?;D)) - é rejeitado
+A*;B*;((f?;C) U (f?;D*)) - é aceito
+
+
+- grafo (A a b) (A b c) (B b d) (A c e)  (A d f)      
+
+A;(A U B);A - é aceito
+A;(A U B);E - é rejeidata
+A;(A U F);A - é rejeitada
+f?A;(A U f?B*);A - é aceita

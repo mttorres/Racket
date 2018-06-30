@@ -1,0 +1,4 @@
+A;(A U B);A
+A;(A U B);E
+A;(A U F);A
+f?A;(A U f?B*);A

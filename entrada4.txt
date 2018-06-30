@@ -1,0 +1,5 @@
+A;B;((f?;C) U (f?;D))
+A;B((E?;c) U(F?;D)) 
+A;S;((f?;C) U (f?;D))
+A;B;((f?;S) U (f?;D))
+A*;B*;((f?;C) U (f?;D*))

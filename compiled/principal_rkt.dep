@@ -1,0 +1,1 @@
+("6.12" ("30a84c91f27d8727e43d565df57117dda83fd165" . "081decfac24a1dceed055c904fdc680e07ad4e1d") #"/home/liveuser/Downloads/trabalhoLP/leitorpdl.rkt" (collects #"graph" #"main.rkt") (collects #"racket" #"main.rkt") (collects #"racket" #"runtime-config.rkt"))

@@ -1,0 +1,8 @@
+A;B
+B;A
+f?A;B
+A;f?;B
+A;B;f?
+A;Bf?
+A;B;C
+A*;B
