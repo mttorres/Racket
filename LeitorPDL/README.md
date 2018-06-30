@@ -2,6 +2,7 @@ LEITOR PDL:
 
 Confirma se um grafo representa um programa PDL.
 
-V0.5 : Atualização: Aceita Programas com Parentese e não determinismo
+Anterior: Aceita programas compostos, programas* e não determinismo.
+V0.5 : Atualização: Aceita Programas com Parentese e não determinismo sem erros.
 
-TODO : Aceitar Programas Compostos com parenteses e com loop.
+TODO : Aceitar Loops em programas compostos. (EX: (alfa;beta)* ) 
